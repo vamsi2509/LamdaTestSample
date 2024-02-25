@@ -9,7 +9,7 @@
       <class name="testcases.ChromePTest"/>
     </classes>
   </test> 
-  <test name="SafariTest">
+  <test name="FirefoxTest">
   <parameter name="browser" value="firefox"/>
   <parameter name="version" value="122.0"/>
   <parameter name="platform" value="macOS Sonoma"/>
