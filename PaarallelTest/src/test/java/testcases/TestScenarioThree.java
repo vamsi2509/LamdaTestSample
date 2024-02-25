@@ -38,7 +38,7 @@ public class TestScenarioThree {
 
 	@AfterTest
 	public void tearDown() {
-		// driver.quit();
+		 driver.quit();
 	}
 
 }

@@ -7,7 +7,6 @@
         <methods>
           <include name="setupSelenium"/>
           <include name="TestCaseOne"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- testcases.TestScenarioTwo -->
     </classes>

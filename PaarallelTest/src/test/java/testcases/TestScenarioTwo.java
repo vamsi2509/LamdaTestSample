@@ -41,7 +41,7 @@ public class TestScenarioTwo {
 
 	@AfterTest
 	public void tearDown() {
-		// driver.quit();
+		driver.quit();
 	}
 
 }
