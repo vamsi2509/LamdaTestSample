@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]">
+  <test parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="testcases.EdgePTest">
+        <methods>
+          <include name="TestCaseThree"/>
+          <include name="TestCaseOne"/>
+          <include name="TestCaseTwo"/>
+        </methods>
+      </class> <!-- testcases.EdgePTest -->
+      <class name="testcases.ChromePTest">
+        <methods>
+          <include name="setupSelenium"/>
+          <include name="TestCaseThree"/>
+          <include name="TestCaseOne"/>
+          <include name="TestCaseTwo"/>
+        </methods>
+      </class> <!-- testcases.ChromePTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
