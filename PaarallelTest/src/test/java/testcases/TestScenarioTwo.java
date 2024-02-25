@@ -7,6 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.SeleniumPlayground;
 import pages.SimpleDragAndDropSlider;
 
@@ -16,12 +17,10 @@ public class TestScenarioTwo {
 
 	@BeforeTest
 	public void setupSelenium() {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Admin\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","C:\\Users\\Admin\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		ChromeOptions chromeOptions = new ChromeOptions();
-
 		chromeOptions.addArguments("--remote-allow-origins=*", "ignore-certificate-errors");
-
 		driver = new ChromeDriver(chromeOptions);
 		driver.manage().window().maximize();
 		driver.get("https://www.lambdatest.com/selenium-playground/");

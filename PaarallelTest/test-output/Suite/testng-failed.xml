@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="classes" name="Failed suite [Suite]">
-  <test parallel="classes" name="Test(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
+  <parameter name="browser" value="safari"/>
+  <parameter name="version" value="11.0"/>
+  <parameter name="platform" value="macos High Sierra"/>
+  <test parallel="tests" name="SafariTest(failed)">
+    <parameter name="browser" value="safari"/>
+    <parameter name="version" value="11.0"/>
+    <parameter name="platform" value="macos High Sierra"/>
     <classes>
       <class name="testcases.ChromePTest">
         <methods>
           <include name="setupSelenium"/>
           <include name="tearDown"/>
-          <include name="TestCaseTwo"/>
         </methods>
       </class> <!-- testcases.ChromePTest -->
-      <class name="testcases.EdgePTest">
+      <class name="testcases.SafariPTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="TestCaseOne"/>
+          <include name="TestCaseTwo"/>
+          <include name="TestCaseThree"/>
+        </methods>
+      </class> <!-- testcases.SafariPTest -->
+    </classes>
+  </test> <!-- SafariTest(failed) -->
+  <test parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="70.0"/>
+    <parameter name="platform" value="WIN10"/>
+    <classes>
+      <class name="testcases.ChromePTest">
         <methods>
           <include name="setupSelenium"/>
           <include name="tearDown"/>
-          <include name="TestCaseTwo"/>
+          <include name="TestCaseThree"/>
         </methods>
-      </class> <!-- testcases.EdgePTest -->
+      </class> <!-- testcases.ChromePTest -->
+      <class name="testcases.SafariPTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.SafariPTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

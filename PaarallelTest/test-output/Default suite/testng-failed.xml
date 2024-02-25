@@ -3,12 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="testcases.TestScenarioTwo">
+      <class name="testcases.ParallelTest">
         <methods>
           <include name="setupSelenium"/>
-          <include name="TestCaseOne"/>
+          <include name="tearDown"/>
+          <include name="TestCaseTwo"/>
         </methods>
-      </class> <!-- testcases.TestScenarioTwo -->
+      </class> <!-- testcases.ParallelTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
