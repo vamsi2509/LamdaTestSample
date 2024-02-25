@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
-  <parameter name="browser" value="safari"/>
-  <parameter name="version" value="11.0"/>
-  <parameter name="platform" value="macos High Sierra"/>
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]">
+  <parameter name="browser" value="edge"/>
+  <parameter name="version" value="122.0"/>
+  <parameter name="platform" value="macOS Sonoma"/>
   <test parallel="tests" name="SafariTest(failed)">
-    <parameter name="browser" value="safari"/>
-    <parameter name="version" value="11.0"/>
-    <parameter name="platform" value="macos High Sierra"/>
+    <parameter name="browser" value="edge"/>
+    <parameter name="version" value="122.0"/>
+    <parameter name="platform" value="macOS Sonoma"/>
     <classes>
       <class name="testcases.ChromePTest">
         <methods>
@@ -26,24 +26,4 @@
       </class> <!-- testcases.SafariPTest -->
     </classes>
   </test> <!-- SafariTest(failed) -->
-  <test parallel="tests" name="ChromeTest(failed)">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="version" value="70.0"/>
-    <parameter name="platform" value="WIN10"/>
-    <classes>
-      <class name="testcases.ChromePTest">
-        <methods>
-          <include name="setupSelenium"/>
-          <include name="tearDown"/>
-          <include name="TestCaseThree"/>
-        </methods>
-      </class> <!-- testcases.ChromePTest -->
-      <class name="testcases.SafariPTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testcases.SafariPTest -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

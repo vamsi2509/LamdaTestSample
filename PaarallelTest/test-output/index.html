@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 4 failed,   2 passed</span>
+                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,11 +107,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.SafariPTest" class="method navigator-link" hash-for-method="TestCaseThree">TestCaseThree</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.ChromePTest" class="method navigator-link" hash-for-method="TestCaseThree">TestCaseThree</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,6 +130,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ChromePTest" class="method navigator-link" hash-for-method="TestCaseThree">TestCaseThree</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.ChromePTest" class="method navigator-link" hash-for-method="TestCaseTwo">TestCaseTwo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -153,47 +153,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testcases.ChromePTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestCaseThree">
-                  </a> <!-- TestCaseThree -->
-                  <span class="method-name">TestCaseThree</span>
-                  <div class="stack-trace">org.openqa.selenium.UnsupportedCommandException: getElementDomAttribute
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-R8C3CCQ&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [3154fdb3d4d162b43859d2020f93fd85, getElementDomAttribute {id=0.30073969161397995-7, name=multiple}]
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59450}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: 3154fdb3d4d162b43859d2020f9...}
-Element: [[RemoteWebDriver: chrome on XP (3154fdb3d4d162b43859d2020f93fd85)] -&gt; name: country]
-Session ID: 3154fdb3d4d162b43859d2020f93fd85
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:250)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.getDomAttribute(RemoteWebElement.java:145)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.getDomAttribute(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:54)
-	at pages.SimpleFormFill.formFill(SimpleFormFill.java:88)
-	at testcases.ChromePTest.TestCaseThree(ChromePTest.java:100)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">testcases.SafariPTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -202,37 +161,13 @@ Session ID: 3154fdb3d4d162b43859d2020f93fd85
                   <a name="TestCaseOne">
                   </a> <!-- TestCaseOne -->
                   <span class="method-name">TestCaseOne</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-R8C3CCQ&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [31A97155-9328-4856-A7A2-B806E0AD705D, findElement {using=id, value=user-message}]
-Capabilities {applicationCacheEnabled: true, browserName: safari, cleanSession: true, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: false, nativeEvents: true, platform: MAC, platformName: MAC, rotatable: false, version: 13605.3.8, webStorageEnabled: true, webdriver.remote.sessionid: 31A97155-9328-4856-A7A2-B80...}
-Session ID: 31A97155-9328-4856-A7A2-B806E0AD705D
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:217)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:169)
-	at org.openqa.selenium.remote.codec.jwp.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:41)
-	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)
-	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:47)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at pages.SimpleFormDemo.passText(SimpleFormDemo.java:40)
-	at testcases.SafariPTest.TestCaseOne(SafariPTest.java:78)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.navigate()&quot; because &quot;this.driver&quot; is null
+	at testcases.SafariPTest.TestCaseOne(SafariPTest.java:76)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 21 stack frames
+... Removed 16 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -241,14 +176,13 @@ Session ID: 31A97155-9328-4856-A7A2-B806E0AD705D
                   <a name="TestCaseThree">
                   </a> <!-- TestCaseThree -->
                   <span class="method-name">TestCaseThree</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Please fill out this field.] but found [Fill out this field]
-	at pages.SimpleFormFill.formFill(SimpleFormFill.java:82)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.navigate()&quot; because &quot;this.driver&quot; is null
 	at testcases.SafariPTest.TestCaseThree(SafariPTest.java:95)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 21 stack frames
+... Removed 16 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -257,37 +191,13 @@ Session ID: 31A97155-9328-4856-A7A2-B806E0AD705D
                   <a name="TestCaseTwo">
                   </a> <!-- TestCaseTwo -->
                   <span class="method-name">TestCaseTwo</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-R8C3CCQ&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [31A97155-9328-4856-A7A2-B806E0AD705D, findElement {using=xpath, value=//h4[text()=&apos; Default value 15&apos;]/following::input[@class=&apos;sp__range&apos;][1]}]
-Capabilities {applicationCacheEnabled: true, browserName: safari, cleanSession: true, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: false, nativeEvents: true, platform: MAC, platformName: MAC, rotatable: false, version: 13605.3.8, webStorageEnabled: true, webdriver.remote.sessionid: 31A97155-9328-4856-A7A2-B80...}
-Session ID: 31A97155-9328-4856-A7A2-B806E0AD705D
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:217)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:169)
-	at org.openqa.selenium.remote.codec.jwp.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:41)
-	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)
-	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:47)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.getAttribute(Unknown Source)
-	at pages.SimpleDragAndDropSlider.sliderDrag(SimpleDragAndDropSlider.java:31)
-	at testcases.SafariPTest.TestCaseTwo(SafariPTest.java:88)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.navigate()&quot; because &quot;this.driver&quot; is null
+	at testcases.SafariPTest.TestCaseTwo(SafariPTest.java:86)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 21 stack frames
+... Removed 16 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -308,6 +218,13 @@ Session ID: 31A97155-9328-4856-A7A2-B806E0AD705D
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="TestCaseThree">
+                  </a> <!-- TestCaseThree -->
+                  <span class="method-name">TestCaseThree</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="TestCaseTwo">
                   </a> <!-- TestCaseTwo -->
                   <span class="method-name">TestCaseTwo</span>
@@ -324,19 +241,19 @@ Session ID: 31A97155-9328-4856-A7A2-B806E0AD705D
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot;&gt;
   &lt;test name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;version&quot; value=&quot;70.0&quot;/&gt;
+    &lt;parameter name=&quot;version&quot; value=&quot;122.0&quot;/&gt;
     &lt;parameter name=&quot;platform&quot; value=&quot;WIN10&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.ChromePTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
   &lt;test name=&quot;SafariTest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;safari&quot;/&gt;
-    &lt;parameter name=&quot;version&quot; value=&quot;11.0&quot;/&gt;
-    &lt;parameter name=&quot;platform&quot; value=&quot;macos High Sierra&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;version&quot; value=&quot;122.0&quot;/&gt;
+    &lt;parameter name=&quot;platform&quot; value=&quot;macOS Sonoma&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.SafariPTest&quot;/&gt;
     &lt;/classes&gt;
@@ -385,32 +302,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestCaseTwo')
 data.setCell(0, 2, 'testcases.ChromePTest')
-data.setCell(0, 3, 7510);
+data.setCell(0, 3, 12524);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TestCaseOne')
-data.setCell(1, 2, 'testcases.SafariPTest')
-data.setCell(1, 3, 7354);
+data.setCell(1, 1, 'TestCaseThree')
+data.setCell(1, 2, 'testcases.ChromePTest')
+data.setCell(1, 3, 3078);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TestCaseThree')
+data.setCell(2, 1, 'TestCaseOne')
 data.setCell(2, 2, 'testcases.ChromePTest')
-data.setCell(2, 3, 4531);
+data.setCell(2, 3, 2434);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TestCaseOne')
-data.setCell(3, 2, 'testcases.ChromePTest')
-data.setCell(3, 3, 4147);
+data.setCell(3, 2, 'testcases.SafariPTest')
+data.setCell(3, 3, 6);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TestCaseThree')
+data.setCell(4, 1, 'TestCaseTwo')
 data.setCell(4, 2, 'testcases.SafariPTest')
-data.setCell(4, 3, 2613);
+data.setCell(4, 3, 2);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TestCaseTwo')
+data.setCell(5, 1, 'TestCaseThree')
 data.setCell(5, 2, 'testcases.SafariPTest')
-data.setCell(5, 3, 1706);
+data.setCell(5, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -438,70 +355,56 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.ChromePTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setupSelenium(chrome, 70.0, WIN10)</span>
+                <span class="method-name">setupSelenium(chrome, 122.0, WIN10)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.SafariPTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setUp(safari, 11.0, macos High Sierra)</span>
+                <span class="method-name">setUp(edge, 122.0, macOS Sonoma)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TestCaseOne</span>
-                <span class="method-start">23973 ms</span>
+                <span class="method-start">3731 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.ChromePTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TestCaseOne</span>
-                <span class="method-start">30724 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.SafariPTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TestCaseTwo</span>
-                <span class="method-start">31351 ms</span>
+                <span class="method-start">3740 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TestCaseThree</span>
-                <span class="method-start">33063 ms</span>
+                <span class="method-start">3745 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.ChromePTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TestCaseTwo</span>
-                <span class="method-start">34880 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.SafariPTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35693 ms</span>
+                <span class="method-start">3752 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.ChromePTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
+                <span class="method-name">TestCaseOne</span>
+                <span class="method-start">5200 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCaseTwo</span>
+                <span class="method-start">7643 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">TestCaseThree</span>
-                <span class="method-start">42398 ms</span>
+                <span class="method-start">20177 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">46932 ms</span>
+                <span class="method-start">23257 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

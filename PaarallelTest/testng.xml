@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Suite">
+<suite thread-count="3" parallel="tests" name="Suite">
 <test name="ChromeTest">
   <parameter name="browser" value="chrome"/>
   <parameter name="version" value="122.0"/>
@@ -10,8 +10,8 @@
     </classes>
   </test> 
   <test name="SafariTest">
-  <parameter name="browser" value="safari"/>
-  <parameter name="version" value="17.0"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="version" value="122.0"/>
   <parameter name="platform" value="macOS Sonoma"/>
     <classes>
       <class name="testcases.SafariPTest"/>
