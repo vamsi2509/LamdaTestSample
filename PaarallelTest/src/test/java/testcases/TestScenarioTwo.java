@@ -1,18 +1,14 @@
 package testcases;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pages.SeleniumPlayground;
 import pages.SimpleDragAndDropSlider;
-import pages.SimpleFormDemo;
 
 public class TestScenarioTwo {
 
