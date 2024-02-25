@@ -14,7 +14,7 @@
   <parameter name="version" value="122.0"/>
   <parameter name="platform" value="macOS Sonoma"/>
     <classes>
-      <class name="testcases.SafariPTest"/>
+      <class name="testcases.FirefoxPTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
